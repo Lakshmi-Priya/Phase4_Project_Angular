@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<div>
+        <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:xx-large">
+            <b>---------Your marks is {{marks}}/5---------</b>
+        </p>
+        <div *ngIf="review[0]==1">
+          <p style="font-family:Arial, Helvetica, sans-serif; font-size:x-large;text-align: center;color: whitesmoke;">
+              <b>😞 Very Poor - Please study hard! Retake the test later</b></p> 
+          </div>
+          <div *ngIf="review[1]==1">
+              <p style="font-family:Arial, Helvetica, sans-serif; font-size:x-large;text-align: center;color: whitesmoke;">
+              <b>😟 Poor - Please study hard!</b></p> 
+          </div>
+          <div *ngIf="review[2]==1">
+              <p style="font-family:Arial, Helvetica, sans-serif; font-size:x-large;text-align: center;color: whitesmoke;">
+              <b>🙁 Below Average - More effort needed!!!</b></p> 
+          </div>
+          <div *ngIf="review[3]==1">
+              <p style="font-family:Arial, Helvetica, sans-serif; font-size:x-large;text-align: center;color: whitesmoke;">
+              <b>😐 Average - Work hard!!!</b></p> 
+          </div>
+          <div *ngIf="review[4]==1">
+              <p style="font-family:Arial, Helvetica, sans-serif; font-size:x-large;text-align: center;color: whitesmoke;">
+              <b>🙂 Good - Keep it up!!!</b></p> 
+          </div>
+          <div *ngIf="review[5]==1">
+              <p style="font-family:Arial, Helvetica, sans-serif; font-size:x-large;text-align: center;color: whitesmoke;">
+              <b>😃 Very Good - Keep it up!!!</b></p> 
+          </div>
+          <br>
+  
+        <p  style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large">
+            <b>The solutions are as follows</b>
+        </p>
+        <div class ="text-center">
+            
+              <div class="col-md-12 form-group" style="align-items: center">
+                <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large;">
+                  Question 1: {{quizAnswers[0].question}}</p>
+                  <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large;">
+                    Ans: {{quizAnswers[0].answer}}</p>
+               </div><br>
+
+              <div class="col-md-12 form-group">
+                <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large">
+                  Question 2: {{quizAnswers[1].question}}</p>
+                  <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large;">
+                    Ans: {{quizAnswers[1].answer}}</p>
+              </div><br>
+
+              <div class="col-md-12 form-group">
+                <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large">
+                  Question 3:{{quizAnswers[2].question}}</p>
+                  <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large;">
+                    Ans: {{quizAnswers[2].answer}}</p>
+              </div><br>
+
+              <div class="col-md-12 form-group">
+                <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large">
+                  Question 4: {{quizAnswers[3].question}}</p>
+                  <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large;">
+                    Ans: {{quizAnswers[3].answer}}</p>
+              </div><br>
+
+              <div class="col-md-12 form-group">
+                <p  style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large">
+                  Question 5:{{quizAnswers[4].question}}</p>
+                  <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large;">
+                    Ans: {{quizAnswers[4].answer}}</p>
+              </div><br>
+           
+          </div>
+          <br><br><br>
+        
+</div>

@@ -1,0 +1,54 @@
+<div *ngIf="view"> 
+<p class="lead" style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;" >
+    {{name}},  Your quiz starts now!!!!
+  </p>
+  <pre class="lead" style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;" >
+    Please answer the questions below . You will receive 1 point for every correct answer submitted. 
+    You have only one attempt to take the test. 
+  </pre>
+  <div class ="text-center">
+  <form >
+    <div class="col-md-12 form-group" style="align-items: center">
+      <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large;">
+        Question 1: {{question1}}</p>
+        <div>
+          <input type="text" [(ngModel)]="answers[0]" name="ans1"  class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form-control p-4 px-2" />
+        </div>
+  </div><br>
+    <div class="col-md-12 form-group">
+      <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large">
+        Question 2: {{question2}}</p>
+        <div>
+          <input type="text" [(ngModel)]="answers[1]" name="ans2" class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form-control p-4 px-2" />
+        </div>
+    </div><br>
+    <div class="col-md-12 form-group">
+      <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large">
+        Question 3: {{question3}}</p>
+        <div>
+          <input type="text" [(ngModel)]="answers[2]" name="ans3" class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form-control p-4 px-2" />
+        </div>
+    </div><br>
+    <div class="col-md-12 form-group">
+      <p style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large">
+        Question 4: {{question4}}</p>
+        <div>
+          <input type="text" [(ngModel)]="answers[3]" name="ans4" class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form-control p-4 px-2" />
+        </div>
+    </div><br>
+    <div class="col-md-12 form-group">
+      <p  style="text-align:center;color: whitesmoke;font-weight: bold;font-family:cursive;font-size:x-large">
+        Question 5: {{question5}}</p>
+        <div>
+          <input type="text" [(ngModel)]="answers[4]" name="ans5" class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form-control p-4 px-2" />
+        </div>
+    </div><br>
+    <div class ="justify-content-center">
+      <button type="submit" class="btn btn-primary btn-lg " (click)="submit()" routerLink='/result'>Submit</button>
+    </div>
+    
+  </form>
+</div>
+</div>
+  <br>
+  
